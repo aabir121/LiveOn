@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.buglab.liveon.activity.AmbulanceInfoActivity">
+
+
+
+    <include layout="@layout/content_ambulance_info" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="top|start"
+        app:fabSize="mini"
+        android:id="@+id/sideBarToggleBtn"
+        app:backgroundTint="@color/colorTealTransparentPressed"
+        android:src="@drawable/ic_menu"
+        />
+    <android.support.design.widget.FloatingActionButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/searchBtn"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/colorTealTransparentPressed"
+        android:src="@android:drawable/ic_search_category_default"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchBarEditText"
+        android:visibility="invisible">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|top"
+            android:paddingLeft="20dp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginLeft="55dp"
+
+            android:id="@+id/searchAmbulanceFilter"
+            android:background="@drawable/custom_contact_number_holder"/>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

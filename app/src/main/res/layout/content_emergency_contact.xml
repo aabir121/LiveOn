@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@drawable/background_main"
+    tools:context="com.example.buglab.liveon.activity.EmergencyContactActivity"
+    tools:showIn="@layout/app_bar_emergency_contact">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emeregencyContactInputHolder"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white"
+        android:text="Emergency contacts."
+        android:gravity="center"
+        android:textSize="20dp"
+        android:padding="10dp"
+        />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/emeregencyContactInputHolder"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="25dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@drawable/custom_emergency_contact_holder"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:paddingBottom="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="+880"
+                        android:padding="7dp"
+                        android:gravity="center"
+                        android:textSize="@dimen/emergencyContactInputText"
+                        android:textColor="@android:color/white"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/contactText1"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/custom_emergency_contact_holder"
+                        android:inputType="phone"
+                        />
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:id="@+id/contactButton1"
+
+                        android:background="#0F009688"
+                        android:src="@drawable/ic_contact_phone"
+                        android:tint="@android:color/white"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+
+                    >
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="+880"
+                        android:padding="7dp"
+                        android:gravity="center"
+                        android:textSize="@dimen/emergencyContactInputText"
+                        android:textColor="@android:color/white"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/contactText2"
+                        android:background="@drawable/custom_emergency_contact_holder"
+                        android:inputType="phone"
+                        />
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/contactButton2"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+
+                        android:background="#0F009688"
+                        android:src="@drawable/ic_contact_phone"
+                        android:tint="@android:color/white"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="+880"
+                        android:padding="7dp"
+                        android:gravity="center"
+                        android:textSize="@dimen/emergencyContactInputText"
+                        android:textColor="@android:color/white"
+                        />
+                    <EditText
+                        android:inputType="phone"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/contactText3"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/custom_emergency_contact_holder"/>
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/contactButton3"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+
+                        android:background="#0F009688"
+                        android:src="@drawable/ic_contact_phone"
+                        android:tint="@android:color/white"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+
+                    >
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="+880"
+                        android:padding="7dp"
+                        android:gravity="center"
+                        android:textSize="@dimen/emergencyContactInputText"
+                        android:textColor="@android:color/white"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="wrap_content"
+
+                        android:paddingLeft="10dp"
+                        android:id="@+id/contactText4"
+                        android:layout_margin="10dp"
+                        android:inputType="phone"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/custom_emergency_contact_holder"/>
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/contactButton4"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+
+                        android:background="#0F009688"
+                        android:src="@drawable/ic_contact_phone"
+                        android:tint="@android:color/white"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:layout_marginBottom="20dp"
+                    >
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="+880"
+                        android:padding="7dp"
+                        android:gravity="center"
+                        android:textSize="@dimen/emergencyContactInputText"
+                        android:textColor="@android:color/white"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:inputType="phone"
+                        android:paddingLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:id="@+id/contactText5"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/custom_emergency_contact_holder"/>
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/contactButton5"
+                        android:layout_gravity="center"
+                        android:background="#0F009688"
+                        android:src="@drawable/ic_contact_phone"
+                        android:tint="@android:color/white"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Submit"
+        android:layout_below="@+id/emeregencyContactInputHolder"
+        android:layout_margin="5dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/custom_emergency_button_background"
+        android:id="@+id/emergencyContactSubmitBtn"
+        />
+
+</RelativeLayout>

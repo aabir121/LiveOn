@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/container"
+    tools:context="com.example.buglab.liveon.activity.EmergencyDirection">
+
+
+    <include layout="@layout/content_emergency_direction" />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginTop="30dp"
+        app:fabSize="mini"
+        android:layout_gravity="top|start"
+        android:id="@+id/sideBarToggleBtn"
+        android:src="@drawable/ic_menu"
+        app:backgroundTint="@color/colorTealTransparentPressed"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:fabSize="normal"
+        android:tint="@android:color/black"
+        app:backgroundTint="@android:color/holo_green_dark"
+        android:src="@android:drawable/ic_menu_call" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:orientation="vertical"
+        >
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_directions_car"
+            android:id="@+id/busBtn"
+            app:backgroundTint="@android:color/white"
+            android:layout_margin="16dp"
+            app:fabSize="mini"
+            />
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_directions_walk"
+            android:id="@+id/walkBtn"
+            app:backgroundTint="@android:color/white"
+            android:tint="@android:color/black"
+            android:layout_margin="16dp"
+            app:fabSize="mini"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/expandedImage"
+        android:padding="20dp"
+        />
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_emergency"
+            android:icon="@drawable/ic_contact_phone"
+            android:title="Emergency Contact"
+            android:itemBackground="@android:color/white"
+            />
+        <item
+            android:id="@+id/nav_emergency_search"
+            android:icon="@drawable/ic_menu_emergency"
+            android:title="Emergency Search" />
+        <item
+            android:id="@+id/nav_medical_service"
+            android:icon="@drawable/ic_menu_medical_service"
+            android:title="Medical Service" />
+        <item
+            android:id="@+id/nav_medical_studies"
+            android:icon="@drawable/ic_menu_medical_studies"
+            android:title="Medical Studies" />
+        <item
+            android:id="@+id/nav_self_diagnose"
+            android:icon="@drawable/ic_menu_self_diagnosis"
+            android:title="Self Diagnosis" />
+        <item
+            android:id="@+id/nav_medicine_alarm"
+            android:icon="@drawable/ic_menu_medicine_alarm"
+            android:title="Medicine Alarm" />
+
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_menu_rate"
+                android:title="Rate Us" />
+            <item
+                android:id="@+id/nav_more_apps"
+                android:icon="@drawable/ic_menu_rate"
+                android:title="More Apps" />
+        </menu>
+    </item>
+
+</menu>

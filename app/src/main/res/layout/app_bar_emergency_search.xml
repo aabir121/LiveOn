@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.buglab.liveon.activity.EmergencySearchActivity">
+
+
+    <include layout="@layout/content_emergency_search" />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="top|start"
+        app:fabSize="mini"
+        android:id="@+id/sideBarToggleBtn"
+        app:backgroundTint="@color/colorTealTransparentPressed"
+        android:src="@drawable/ic_menu"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:text="Hospitals"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:id="@+id/hospitalDetailBtn"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_emergency_button_background"
+        />
+</android.support.design.widget.CoordinatorLayout>

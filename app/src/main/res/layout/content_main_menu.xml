@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.buglab.liveon.activity.MainMenuActivity"
+    tools:showIn="@layout/app_bar_main_menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/colorTealTransparent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:background="@drawable/sidemap">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:text="Emergency Search"
+                android:padding="15dp"
+                android:id="@+id/emergencySearchBtn"
+                android:background="@drawable/custom_emergency_button_background"
+                android:textColor="@android:color/white"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medical Services"
+            style="@style/ButtonMargin"
+            android:id="@+id/medicalServicesBtn"
+            android:background="@drawable/custom_button_background"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medical Studies"
+            android:id="@+id/medicalStudiesBtn"
+            android:background="@drawable/custom_button_background"
+            style="@style/ButtonMargin"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Self Diagnosis"
+            android:id="@+id/selfDiagnosBtn"
+            android:background="@drawable/custom_button_background"
+            style="@style/ButtonMargin"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
